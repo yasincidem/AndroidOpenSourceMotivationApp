@@ -1,0 +1,66 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": ""cbz3lIQ2N25AfwNr-BdxUVxJ_QY/7RffZFp-F6KggLUnZYgoAD-4bwk"",
+  "nextPageToken": "CAEQAA",
+  "pageInfo": {
+    "totalResults": 257,
+    "resultsPerPage": 1
+  },
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": ""cbz3lIQ2N25AfwNr-BdxUVxJ_QY/knb5a2ZtFZNGQrr4tyuZe9RXQU0"",
+      "id": "VVVQRF9ieENSR3BtbWVRY2JlMmtwUGFBLmZCUi1NRnBWS3Vj",
+      "snippet": {
+        "publishedAt": "2017-10-10T15:00:05.000Z",
+        "channelId": "UCPD_bxCRGpmmeQcbe2kpPaA",
+        "title": "Sean Evans Learns How to Make Sushi | Sean in the Wild",
+        "description": "Culinary neophyte Sean Evans has learned how to scramble an egg and sear a steak, but now he's up against his toughest challenge yet. Does he have what it takes to make it as a sushi chef? In the hopes of learning this highly skilled trade, Sean enrolls at the Sushi Chef Institute—an intensive, two-month course led by chef Andy Matsuda. From scaling a fish to molding nigiri, Sean learns the sushi-making basics from a real master. Will Sean make the grade or flunk his midterm? Find out on an all new episode of Sean in the Wild.
+
+        Subscribe to First We Feast on YouTube: http://goo.gl/UxFzhK
+        Check out more of First We Feast here:
+        http://firstwefeast.com/
+        https://twitter.com/firstwefeast
+        https://www.facebook.com/FirstWeFeast
+        http://instagram.com/firstwefeast
+
+
+        First We Feast videos offer an iconoclastic view into the culinary world, taking you behind-the-scenes with some of the country's best chefs and finding the unexpected places where food and pop culture intersect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fBR-MFpVKuc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fBR-MFpVKuc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fBR-MFpVKuc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/fBR-MFpVKuc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/fBR-MFpVKuc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "First We Feast",
+        "playlistId": "UUPD_bxCRGpmmeQcbe2kpPaA",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "fBR-MFpVKuc"
+        }
+      }
+    }
+  ]
+}

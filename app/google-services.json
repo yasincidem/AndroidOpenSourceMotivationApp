@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "75911602635",
+    "firebase_url": "https://motivationalandinspirati-23582.firebaseio.com",
+    "project_id": "motivationalandinspirati-23582",
+    "storage_bucket": "motivationalandinspirati-23582.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75911602635:android:130fdcb6b6b25fb1",
+        "android_client_info": {
+          "package_name": "com.yasin.yasin_000.motivationalandinspirationalquoteswallpapers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75911602635-ufb1i6cd3h8ddskjjmo20kgjm2bnin3e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yasin.yasin_000.motivationalandinspirationalquoteswallpapers",
+            "certificate_hash": "5b579abbee8941a9b5ee19360cf0a508cd39f59f"
+          }
+        },
+        {
+          "client_id": "75911602635-9uniah09i0jtcbu5gprb9e34uihd9vih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKO2W2M5ljNAfX175nemfxun-naA6C0fU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75911602635-9uniah09i0jtcbu5gprb9e34uihd9vih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

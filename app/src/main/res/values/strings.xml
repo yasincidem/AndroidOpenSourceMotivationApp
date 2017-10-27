@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">" Motivational And Inspirational Quotes Wallpapers"</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_wallpaper_fullscreen">WallpaperFullscreen</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_create_wallpaper">CreateWallpaperActivity</string>
+</resources>
