@@ -17,7 +17,7 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.github.pwittchen.infinitescroll.library.InfiniteScrollListener;
+
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -111,7 +111,7 @@ public class VideoActivity extends YouTubeBaseActivity implements YouTubePlayer.
                     recyclerView.setAdapter(adapter);
                     progressBar.setVisibility(View.GONE);
                     youTubePlayerFragment = (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_player);
-                    youTubePlayerFragment.initialize("AIzaSyBgM7tXI016kvmQjouX8D2jVHO7imdJDxY", VideoActivity.this);
+                    youTubePlayerFragment.initialize("YOUTUBE_PLAYER_API_KEY", VideoActivity.this);
 
                 }
 
@@ -125,35 +125,7 @@ public class VideoActivity extends YouTubeBaseActivity implements YouTubePlayer.
 
     }
 
-//    private void getMoreData(final VideosRecyclerAdapter adapter) {
-//        adapter.setOnBottomReachedListener(new OnBottomReachedListener() {
-//            @Override
-//            public void onBottomReached(int position) {
-//                Toast.makeText(VideoActivity.this, "On the end", Toast.LENGTH_SHORT).show();
-//                Call<Data> listCall;
-//                listCall = youtubeService.getCallWithNextPageToken(playlistId ,nextPageToken);
-//                listCall.enqueue(new Callback<Data>() {
-//                    @Override
-//                    public void onResponse(Call<Data> call, Response<Data> response) {
-//                        List<Item> responseList = response.body().getItems();
-//                        for (int i = 0; i < responseList.size() ; i++) {
-//                            items.add(responseList.get(i));
-//                        }
-//                        adapter.notifyDataSetChanged();
-//                        recyclerView.setAdapter(adapter);
-//
-//
-//                        doItOnce = false;
-//                    }
-//
-//                    @Override
-//                    public void onFailure(Call<Data> call, Throwable t) {
-//                        Toast.makeText(VideoActivity.this, "An error occured", Toast.LENGTH_SHORT).show();
-//                    }
-//                });
-//            }
-//        });
-//    }
+    
 
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
@@ -182,50 +154,6 @@ public class VideoActivity extends YouTubeBaseActivity implements YouTubePlayer.
             super.onBackPressed();
         }
     }
-
-    private InfiniteScrollListener createInfiniteScrollListener() {
-        return new InfiniteScrollListener(5, linearLayoutManager) {
-            @Override public void onScrolledToEnd(final int firstVisibleItemPosition) {
-                // load your items here
-                // logic of loading items will be different depending on your specific use case
-                Toast.makeText(VideoActivity.this, "On the end", Toast.LENGTH_SHORT).show();
-                Call<Data> listCall;
-                listCall = youtubeService.getCallWithNextPageToken(playlistId ,nextPageToken);
-                listCall.enqueue(new Callback<Data>() {
-                    @Override
-                    public void onResponse(Call<Data> call, Response<Data> response) {
-                        List<Item> responseList = response.body().getItems();
-                        for (int i = 0; i < responseList.size() ; i++) {
-                            items.add(responseList.get(i));
-                        }
-                        adapter.notifyDataSetChanged();
-                        recyclerView.setAdapter(adapter);
-                    }
-
-                    @Override
-                    public void onFailure(Call<Data> call, Throwable t) {
-                        Toast.makeText(VideoActivity.this, "An error occured", Toast.LENGTH_SHORT).show();
-                    }
-                });
-
-                // when new items are loaded, combine old and new items, pass them to your adapter
-                // and call refreshView(...) method from InfiniteScrollListener class to refresh RecyclerView
-                refreshView(recyclerView, new VideosRecyclerAdapter(items, VideoActivity.this), firstVisibleItemPosition);
-            }
-        };
-    }
-    //****************************************************************
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        if (requestCode == 1){
-//            getYoutubePlayerProvider().initialize("AIzaSyBgM7tXI016kvmQjouX8D2jVHO7imdJDxY", this);
-//        }
-//    }
-//
-//    private YouTubePlayer.Provider getYoutubePlayerProvider() {
-//        return findViewById(R.id.youtube_player);
-//    }
-
 
 
 }
