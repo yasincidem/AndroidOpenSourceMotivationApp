@@ -12,12 +12,12 @@ import retrofit2.http.Query;
  */
 
 public interface YoutubeService {
-    @GET("youtube/v3/playlistItems?part=snippet&key=AIzaSyAyYItDsNtZ3rMJzCUMMtBW81HHjPV_bWQ")
+    @GET("youtube/v3/playlistItems?part=snippet&key=YOUR_API_KEY")
     Call<Data> getCallWithKey(
             @Query("maxResults") int number,
             @Query("playlistId") String playlistId);
 
-    @GET("youtube/v3/playlistItems?part=snippet&maxResults=5&key=AIzaSyAyYItDsNtZ3rMJzCUMMtBW81HHjPV_bWQ")
+    @GET("youtube/v3/playlistItems?part=snippet&maxResults=5&key=YOUR_API_KEY")
     Call<Data> getCallWithNextPageToken(
             @Query("playlistId") String playlistId,
             @Query("pageToken") String pageToken);
